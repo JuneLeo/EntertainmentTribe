@@ -39,3 +39,4 @@ react-native bundle --platform android --dev false --entry-file index.android.js
 16.cardview
 17 multidex    dex分割
 18.按照渠道打包方式
+
