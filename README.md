@@ -112,6 +112,3 @@ clone后请先下载react-native 包，具体操作为<br />
 <p>
 	<br />
 </p>
-<pre>
-
-</pre>
