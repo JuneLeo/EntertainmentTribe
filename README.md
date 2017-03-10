@@ -112,3 +112,11 @@ clone后请先下载react-native 包，具体操作为<br />
 <p>	
 <br />
 </p>
+<img src="http://a2.qpic.cn/psb?/V13Up1yH3rFCOm/mF6cdXUyJxMAo6*pWsHHeWy.Jd4s9pvY4gX6nsE7cH0!/b/dLIAAAAAAAAA&bo=gAJyBAAAAAAFB9A!&rf=viewer_4" alt="" height="192" width="108" />
+<img src="http://a2.qpic.cn/psb?/V13Up1yH3rFCOm/9Dicjj1oV.RALq769GYWt7r7eZn*BKeNFnI1PTu0RjY!/b/dLIAAAAAAAAA&bo=gAJyBAAAAAAFANc!&rf=viewer_4" alt="" height="192" width="108" />
+<img src="http://a1.qpic.cn/psb?/V13Up1yH3rFCOm/*cMi22yL5hYxpyuoV8RMvmwt5smGPFob.jVV40uL9ok!/b/dCABAAAAAAAA&bo=gAJyBAAAAAAFANc!&rf=viewer_4" alt="" height="192" width="108" />
+<img src="http://a3.qpic.cn/psb?/V13Up1yH3rFCOm/eB5HoCYM2tvOj*pzZwJTj*neHsn4kqctT4ymDlrfgKA!/b/dB8BAAAAAAAA&bo=gAJyBAAAAAAFANc!&rf=viewer_4" alt="" height="192" width="108" />
+<img src="http://a3.qpic.cn/psb?/V13Up1yH3rFCOm/VuP5T0f5D3KSAF2YBCz0DY3HHUHQpxh..QZe.NJ4pYM!/b/dLAAAAAAAAAA&bo=gAJyBAAAAAAFANc!&rf=viewer_4" alt="" height="192" width="108" />
+<img src="http://a3.qpic.cn/psb?/V13Up1yH3rFCOm/q7YC0BSKNBMNJmr8qZ*piUEeoiVo3oe*Fa.hqFg4jBA!/b/dB8BAAAAAAAA&bo=gAJyBAAAAAAFANc!&rf=viewer_4" alt="" height="192" width="108" />
+<img src="http://a3.qpic.cn/psb?/V13Up1yH3rFCOm/hVC06g23mDQVB1xKWrBTH0dKbOOwVGnM30BJ0mXKkmk!/b/dPgAAAAAAAAA&bo=gAJyBAAAAAAFANc!&rf=viewer_4" alt="" height="192" width="108" />
+<img src="http://a1.qpic.cn/psb?/V13Up1yH3rFCOm/LqR7CiiAL0aKl7SBgNO7J1HWlX9ihLYF.MCA9938OEM!/b/dCABAAAAAAAA&bo=gAJyBAAAAAAFANc!&rf=viewer_4" alt="" height="192" width="108" />
