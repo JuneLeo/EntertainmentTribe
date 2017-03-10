@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_common_translate">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_image_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/color_common_white"
+            android:textSize="@dimen/text_common_1_size"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_image_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/common_spacing_9_dp"
+            android:text="1/12"
+            android:textColor="@color/color_common_white"
+            android:textSize="@dimen/text_common_1_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:paddingBottom="@dimen/edge_left_right_common_size"
+        android:paddingLeft="@dimen/common_spacing_7_dp"
+        android:paddingRight="@dimen/edge_left_right_common_size"
+        android:paddingTop="@dimen/common_spacing_15_dp"
+        android:src="@drawable/ic_title_back_new" />
+</RelativeLayout>

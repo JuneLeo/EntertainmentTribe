@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_common_ffb400"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.facebook.react.ReactRootView
+        android:id="@+id/id_reactrootview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_common_white"></com.facebook.react.ReactRootView>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--通用大小-->
+    <dimen name="text_common_1_size">16sp</dimen><!--1号字体-->
+    <dimen name="text_common_2_size">15sp</dimen>
+    <dimen name="text_common_3_size">14sp</dimen>
+    <dimen name="text_common_4_size">13sp</dimen>
+    <dimen name="text_common_5_size">12sp</dimen>
+    <dimen name="text_common_6_size">11sp</dimen>
+    <dimen name="text_common_7_size">10sp</dimen>
+    <dimen name="text_common_8_size">9sp</dimen>
+    <dimen name="text_common_9_size">8sp</dimen>
+
+
+
+    <dimen name="text_common_18_size">18sp</dimen>
+    <dimen name="text_common_19_size">19sp</dimen>
+
+    <dimen name="text_common_title_size">21sp</dimen>
+    <dimen name="text_common_headings_size">17sp</dimen>
+    <dimen name="text_common_bottom_size">11sp</dimen>
+
+
+    <!--行与行间距-->
+    <dimen name="lines_common_1_size">8dp</dimen>
+    <dimen name="lines_common_2_size">11dp</dimen>
+    <dimen name="lines_common_3_size">18dp</dimen>
+    <dimen name="lines_common_2s_size">6.5dp</dimen>
+    <!--左右间距-->
+    <dimen name="edge_left_right_common_size">15dp</dimen>
+    <!--上下间距-->
+    <dimen name="edge_top_bottom_common_size">18dp</dimen>
+
+    <dimen name="title_height">48dp</dimen>
+
+
+    <!--自定义-->
+    <dimen name="common_spacing_0.5_dp">0.5dp</dimen>
+    <dimen name="common_spacing_1_dp">1dp</dimen>
+    <dimen name="common_spacing_2_dp">2dp</dimen>
+    <dimen name="common_spacing_3_dp">3dp</dimen>
+    <dimen name="common_spacing_4_dp">4dp</dimen>
+    <dimen name="common_spacing_5_dp">5dp</dimen>
+    <dimen name="common_spacing_6_dp">6dp</dimen>
+    <dimen name="common_spacing_7_dp">7dp</dimen>
+    <dimen name="common_spacing_8_dp">8dp</dimen>
+    <dimen name="common_spacing_9_dp">9dp</dimen>
+    <dimen name="common_spacing_10_dp">10dp</dimen>
+    <dimen name="common_spacing_11_dp">11dp</dimen>
+    <dimen name="common_spacing_12_dp">12dp</dimen>
+    <dimen name="common_spacing_13_dp">13dp</dimen>
+    <dimen name="common_spacing_14_dp">14dp</dimen>
+    <dimen name="common_spacing_15_dp">15dp</dimen>
+    <dimen name="common_spacing_16_dp">16dp</dimen>
+    <dimen name="common_spacing_17_dp">17dp</dimen>
+    <dimen name="common_spacing_18_dp">18dp</dimen>
+    <dimen name="common_spacing_19_dp">19dp</dimen>
+    <dimen name="common_spacing_20_dp">20dp</dimen>
+
+    <dimen name="common_spacing_23_dp">23dp</dimen>
+    <dimen name="common_spacing_25_dp">25dp</dimen>
+    <dimen name="common_spacing_30_dp">30dp</dimen>
+    <dimen name="common_spacing_35_dp">35dp</dimen>
+    <dimen name="common_spacing_40_dp">40dp</dimen>
+    <dimen name="common_spacing_48_dp">48dp</dimen>
+    <dimen name="common_spacing_45_dp">45dp</dimen>
+    <dimen name="common_spacing_50_dp">50dp</dimen>
+    <dimen name="common_spacing_60_dp">60dp</dimen>
+    <dimen name="common_spacing_70_dp">70dp</dimen>
+    <dimen name="common_spacing_80_dp">80dp</dimen>
+    <dimen name="common_spacing_90_dp">90dp</dimen>
+    <dimen name="common_spacing_100_dp">100dp</dimen>
+    <dimen name="common_spacing_256_dp">256dp</dimen>
+</resources>

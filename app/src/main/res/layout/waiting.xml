@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/waiting_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/common_spacing_15_dp"
+        android:paddingLeft="@dimen/common_spacing_25_dp"
+        android:paddingRight="@dimen/common_spacing_25_dp"
+        android:paddingTop="@dimen/common_spacing_15_dp">
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/progress"-->
+            <!--style="@android:style/Widget.ProgressBar.Large"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/waiting_text"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignLeft="@+id/progress"-->
+            <!--android:layout_alignRight="@+id/progress"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:gravity="center"-->
+            <!--android:text="请稍候"-->
+            <!--android:textSize="16.0sp" />-->
+
+        <ImageView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_launcher_logo"/>
+    </RelativeLayout>
+
+</LinearLayout>

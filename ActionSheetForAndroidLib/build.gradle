@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+    def app = rootProject.ext.android
+
+
+    compileSdkVersion app.compileSdkVersion
+    buildToolsVersion app.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion app.minSdkVersion
+        targetSdkVersion app.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    Map<String, String> dependencies = rootProject.ext.dependencies
+    //系统
+//    compile dependencies.supportV13
+    compile dependencies.appCompatV7
+//    compile 'com.android.support:appcompat-v7:23.3.0'
+//    compile 'com.android.support:appcompat-v7:23.0.1'
+}

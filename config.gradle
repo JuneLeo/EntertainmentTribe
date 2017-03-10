@@ -1,0 +1,52 @@
+def versionPropsFile = file("version.properties")//引入属性文件
+Properties versionProps = new Properties()
+versionProps.load(new FileInputStream(versionPropsFile))//读取文件
+
+ext {
+    android = [
+            compileSdkVersion: 23,
+            buildToolsVersion: "25.0.1",
+            appllicationId   : versionProps['APPLICATION_ID'].toString(),
+            minSdkVersion    : 19,
+            targetSdkVersion : 23,
+            versionCode      : versionProps['VERSION_CODE'].toInteger(),
+            versionName      : versionProps['VERSION_NAME'].toString(),
+            resConfigs       : "zh"
+    ]
+
+
+    def supportVersion = "25.0.1"
+
+    dependencies = [
+            supportV13        : "com.android.support:support-v13:$supportVersion",
+            appCompatV7       : "com.android.support:appcompat-v7:$supportVersion",
+            recyclerView      : "com.android.support:recyclerview-v7:$supportVersion",
+            design            : "com.android.support:design:$supportVersion",
+            supportAnnotation : "com.android.support:support-annotations:$supportVersion",
+            cardView          : "com.android.support:cardview-v7:$supportVersion",
+            supportV4         : "com.android.support:support-v4:$supportVersion",
+
+
+            multidex          : 'com.android.support:multidex:1.+',
+
+
+            butterknife       : 'com.jakewharton:butterknife:7.0.1',
+            nineoldandroids   : 'com.nineoldandroids:library:2.4.0',
+            BGARefresh        : 'cn.bingoogolapple:bga-refreshlayout:1.1.7@aar',
+            photoView         : 'com.github.chrisbanes:PhotoView:1.3.1',
+            circleImageView   : 'de.hdodenhof:circleimageview:2.1.0',
+            pinYin4j          : 'com.belerweb:pinyin4j:2.5.1',
+            log4j             : 'log4j:log4j:1.2.17',
+            greenDao          : 'org.greenrobot:greendao:3.2.0',
+            greenDaoGenerator : 'org.greenrobot:greendao-generator:3.2.0',
+
+            debugBlockcanary  : 'com.github.moduth:blockcanary-android:1.2.1',
+            releaseBlockcanary: 'com.github.moduth:blockcanary-no-op:1.2.1',
+            debugLeakcanary   : 'com.squareup.leakcanary:leakcanary-android:1.4-beta2',
+            releaseLeakcanary : 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2',
+
+
+    ]
+
+}
+

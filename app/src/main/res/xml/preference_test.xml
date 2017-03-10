@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="DialogPreference">
+        <EditTextPreference
+            android:key="edit0"
+            android:summary="EditTextPreference summary"
+            android:title="EditTextPreference" />
+
+        <ListPreference
+            android:entries="@array/myentry"
+            android:entryValues="@array/myentryvalues"
+            android:key="ListPreference"
+            android:summary="ListPreference summary"
+            android:title="ListPreference" />
+
+        <MultiSelectListPreference
+            android:entries="@array/myentry"
+            android:entryValues="@array/myentryvalues"
+            android:key="MultiSelectListPreferencekey"
+            android:summary="MultiSelectListPreference summary"
+            android:title="MultiSelectListPreference" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="RingtonePreference">
+        <RingtonePreference
+            android:key="RingtonePreferencekey"
+            android:summary="RingtonePreference "
+            android:title="RingtonePreference" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="TwoStatePreference">
+        <SwitchPreference
+            android:key="SwitchPreferencekey"
+            android:summary="SwitchPreference  summary"
+            android:summaryOff="SwitchPreference summaryOff"
+            android:summaryOn="SwitchPreference summaryOn"
+            android:switchTextOff="SwitchPreference switchTextOff"
+            android:switchTextOn="SwitchPreference switchTextOn"
+            android:title="SwitchPreference" />
+
+        <CheckBoxPreference
+            android:key="CheckBoxPreferenceKey"
+            android:summary="CheckBoxPreference  summary"
+            android:summaryOff="CheckBoxPreference summaryOff"
+            android:summaryOn="CheckBoxPreference summaryOn"
+            android:title="CheckBoxPreference" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

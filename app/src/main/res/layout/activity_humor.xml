@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_common_ffb400"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_spacing_50_dp"
+        android:background="@color/color_common_ffb400"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_humor_logo"
+            android:layout_width="@dimen/common_spacing_100_dp"
+            android:layout_height="@dimen/common_spacing_40_dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/humor_logo" />
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/stl_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tl:tl_indicator_color="#000000"
+            tl:tl_indicator_height="2dp"
+            tl:tl_indicator_width_equal_title="true"
+            tl:tl_tab_padding="16dp"
+            tl:tl_tab_space_equal="true"
+            tl:tl_textSelectColor="#aa000000"
+            tl:tl_textUnselectColor="#66000000"
+            tl:tl_textsize="@dimen/text_common_1_size"
+            tl:tl_underline_color="#00000000"
+            tl:tl_underline_height="2dp"/>
+
+        <!--tl:tl_indicator_color="#000000"
+        tl:tl_indicator_height="2dp"
+        tl:tl_indicator_width_equal_title="true"
+        tl:tl_tab_padding="16dp"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="#aa000000"
+        tl:tl_textUnselectColor="#66000000"
+        tl:tl_textsize="@dimen/text_common_1_size"
+        tl:tl_underline_color="#00000000"
+        tl:tl_underline_height="2dp"-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/fl_change"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

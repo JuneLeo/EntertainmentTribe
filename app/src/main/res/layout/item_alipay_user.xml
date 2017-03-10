@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/common_spacing_100_dp"
+    android:paddingLeft="@dimen/common_spacing_10_dp">
+    <ImageView
+        android:id="@+id/iv_user_img"
+        android:layout_centerVertical="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/user_img"
+        android:layout_marginRight="@dimen/common_spacing_15_dp"/>
+    <TextView
+        android:layout_toRightOf="@id/iv_user_img"
+        android:id="@+id/tv_alipay_user"
+        android:textColor="@color/color_common_black"
+        android:layout_marginTop="@dimen/common_spacing_20_dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_common_4_size"
+        android:text=""/>
+    <TextView
+        android:layout_toRightOf="@id/iv_user_img"
+        android:layout_below="@id/tv_alipay_user"
+        android:textColor="@color/color_common_warm_font"
+        android:layout_marginTop="@dimen/common_spacing_5_dp"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/text_common_5_size"
+        android:layout_height="wrap_content"
+        android:text="查看个人主页"/>
+</RelativeLayout>

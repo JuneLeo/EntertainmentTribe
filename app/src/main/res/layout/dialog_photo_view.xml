@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.entertainment.project.common.photoview.HackyViewPager
+        android:id="@+id/id_vp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/color_common_black">
+
+    </com.entertainment.project.common.photoview.HackyViewPager>
+
+    <include layout="@layout/item_photo_header" />
+    <ImageView
+        android:id="@+id/iv_download"
+        android:padding="@dimen/common_spacing_20_dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="64dp"
+        android:src="@drawable/ic_download"
+        android:layout_height="64dp" />
+
+</RelativeLayout>

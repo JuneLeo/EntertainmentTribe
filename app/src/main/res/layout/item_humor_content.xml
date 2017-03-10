@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/common_spacing_15_dp"
+    android:layout_marginLeft="@dimen/common_spacing_15_dp"
+    android:layout_marginRight="@dimen/common_spacing_15_dp"
+    android:background="@color/color_common_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/common_spacing_10_dp"
+        android:paddingLeft="@dimen/common_spacing_15_dp"
+        android:paddingRight="@dimen/common_spacing_15_dp"
+        android:paddingTop="@dimen/common_spacing_15_dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_comment_user_img"
+            android:layout_width="@dimen/common_spacing_40_dp"
+            android:layout_height="@dimen/common_spacing_40_dp"
+            app:civ_border_width="0dp" />
+
+        <TextView
+
+            android:id="@+id/tv_comment_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_spacing_15_dp"
+            android:text="我又皮痒了"
+            android:textColor="@color/color_common_normal_font"
+            android:textSize="@dimen/text_common_1_size" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_comment_content"
+        android:paddingLeft="@dimen/common_spacing_15_dp"
+        android:paddingRight="@dimen/common_spacing_15_dp"
+        android:paddingBottom="@dimen/common_spacing_15_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_common_3_size"
+        android:textColor="@color/color_common_warm_font"
+        android:text="今天老板和老板娘干起来了，正在闹离婚。原因是老板娘在监控上看到老板揽着一个女店员的腰从杂物间出来，老板的解释是女店员进去拿东西摔了一跤，膝盖都摔破了，就帮忙把她搀出来了。
+我不知道老板娘信不信，反正我信了 " />
+
+
+</LinearLayout>

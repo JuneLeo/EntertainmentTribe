@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ActionSheetForAndroidLib/ActionSheetForAndroidLib.iml" filepath="$PROJECT_DIR$/ActionSheetForAndroidLib/ActionSheetForAndroidLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EntertainmentTribe.iml" filepath="$PROJECT_DIR$/EntertainmentTribe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TabLayoutLib/TabLayoutLib.iml" filepath="$PROJECT_DIR$/TabLayoutLib/TabLayoutLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TabLayout_Lib/TabLayout_Lib.iml" filepath="$PROJECT_DIR$/TabLayout_Lib/TabLayout_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/greendaolib/greendaolib.iml" filepath="$PROJECT_DIR$/greendaolib/greendaolib.iml" />
+    </modules>
+  </component>
+</project>

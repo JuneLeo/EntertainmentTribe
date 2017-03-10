@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--颜色汇总 以功能命名-->
+
+    <color name="color_common_hint_font">#999999</color>
+    <color name="color_common_warm_font">#666666</color>
+    <color name="color_common_normal_font">#333333</color>
+
+    <color name="color_common_translate">#00000000</color>
+    <color name="color_common_black">#000000</color>
+    <color name="color_common_white">#ffffff</color>
+    <color name="color_common_white_half">#80ffffff</color>
+    <color name="color_common_border_stroke">#efefef</color>
+
+    <color name="color_common_main">#ed7140</color>
+    <!-- 功能待定 -->
+    <color name="color_common_ffb400">#ffb400</color>
+    <color name="color_common_449ff7">#449ff7</color>
+    <color name="color_common_f3f3f3">#f3f3f3</color>
+    <color name="color_common_01164e">#01164e</color>
+    <color name="color_common_062579">#062579</color>
+    <color name="color_common_b2df8a">#b2df8a</color>
+    <color name="color_common_e34e56">#e34e56</color>
+    <color name="color_common_f4cd9c">#f4cd9c</color>
+    <color name="color_common_9ce0cf">#9ce0cf</color>
+    <color name="color_common_e5e5e5">#e5e5e5</color>
+    <color name="color_common_faad94">#faad94</color>
+    <color name="color_common_c6c6c6">#c6c6c6</color>
+
+</resources>

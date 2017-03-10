@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/common_spacing_45_dp"
+    android:paddingRight="@dimen/common_spacing_10_dp"
+    android:paddingLeft="@dimen/common_spacing_10_dp">
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/text_common_19_size"
+        android:text="686.32"
+        android:textColor="@color/color_common_black"
+        android:id="@+id/tv_alipay_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/text_common_4_size"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="帐号安全险检测中"
+        android:textColor="#66bcaf"/>
+</RelativeLayout>

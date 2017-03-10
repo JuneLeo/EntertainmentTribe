@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="65dp"
+    >
+    <ImageView
+        android:id="@+id/iv_function_img"
+        android:layout_marginTop="@dimen/common_spacing_15_dp"
+        android:layout_marginLeft="@dimen/common_spacing_15_dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/common_spacing_10_dp"/>
+    <LinearLayout
+        android:layout_toRightOf="@id/iv_function_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/common_spacing_10_dp"
+        android:layout_marginTop="@dimen/common_spacing_10_dp">
+        <TextView
+            android:text="芝麻信用"
+            android:gravity="center"
+            android:textSize="@dimen/text_common_4_size"
+            android:textColor="@color/color_common_normal_font"
+            android:id="@+id/tv_alipay_function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="芝麻信用"
+            android:singleLine="true"
+            android:gravity="center"
+            android:paddingTop="@dimen/common_spacing_5_dp"
+            android:textSize="@dimen/text_common_5_size"
+            android:textColor="@color/color_common_warm_font"
+            android:id="@+id/tv_alipay_function_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_humor_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_spacing_15_dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_spacing_15_dp"
+        android:layout_marginRight="@dimen/common_spacing_15_dp"
+        android:background="@color/color_common_white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/common_spacing_15_dp"
+        android:paddingRight="@dimen/common_spacing_15_dp">
+
+        <TextView
+            android:id="@+id/tv_humor_comment_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/common_spacing_5_dp"
+            android:paddingTop="@dimen/common_spacing_5_dp"
+            android:text="评论"
+            android:textColor="@color/color_common_black"
+            android:textSize="@dimen/text_common_5_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_humor_comment_label_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_comment_label"
+            android:drawablePadding="@dimen/common_spacing_5_dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/common_spacing_5_dp"
+            android:text="神评论"
+            android:textColor="@color/color_common_ffb400"
+            android:textSize="@dimen/text_common_5_size"
+            android:visibility="gone" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/common_spacing_8_dp"
+                android:paddingTop="@dimen/common_spacing_8_dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/iv_humor_user_img"
+                    android:layout_width="@dimen/common_spacing_30_dp"
+                    android:layout_height="@dimen/common_spacing_30_dp"
+                    app:civ_border_width="0dp" />
+
+
+
+                <TextView
+                    android:id="@+id/tv_humor_comment_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_humor_user_img"
+                    android:paddingLeft="@dimen/common_spacing_10_dp"
+                    android:text="大白哥哥"
+                    android:textColor="@color/color_common_normal_font"
+                    android:textSize="@dimen/text_common_5_size" />
+
+                <TextView
+                    android:id="@+id/tv_humor_comment_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_humor_comment_name"
+                    android:layout_toRightOf="@id/iv_humor_user_img"
+                    android:paddingLeft="@dimen/common_spacing_10_dp"
+                    android:paddingTop="@dimen/common_spacing_1_dp"
+                    android:text="张张嘴，有口难言。咬咬牙，忍痛度过。。。求横批。。三缄芊言张张嘴，有口难言。咬咬牙，忍痛度过。。。求横批。。三缄芊言张张嘴，有口难言。咬咬牙，忍痛度过。。。求横批。。三缄芊言 "
+                    android:textColor="@color/color_common_warm_font"
+                    android:textSize="@dimen/text_common_5_size" />
+            </RelativeLayout>
+            <TextView
+                android:paddingLeft="@dimen/common_spacing_5_dp"
+                android:id="@+id/tv_humor_comment_position"
+                android:textColor="@color/color_common_warm_font"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:text=""/>
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/v_humor_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_spacing_1_dp"
+            android:background="@color/color_common_border_stroke" />
+    </LinearLayout>
+</LinearLayout>

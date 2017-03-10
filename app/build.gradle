@@ -1,0 +1,193 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'me.tatarka.retrolambda' //加上这句加,入plugin声明
+
+android {
+    def app = rootProject.ext.android
+
+    signingConfigs {
+        config {
+            keyAlias 'yonyou'
+            keyPassword 'yonyou'
+            storeFile file('/Users/Sick/yonyou.jks')
+            storePassword 'yonyou'
+        }
+        // your debug keystore
+        debug {
+            storeFile file("debug.keystore")
+        }
+    }
+
+    compileSdkVersion app.compileSdkVersion
+    buildToolsVersion app.buildToolsVersion
+
+    defaultConfig {
+        applicationId app.appllicationId
+        minSdkVersion app.minSdkVersion
+        targetSdkVersion app.targetSdkVersion
+        versionCode app.versionCode
+        versionName app.versionName
+        resConfigs app.resConfigs
+
+        // dex突破65535的限制
+        multiDexEnabled true
+
+        // 默认是umeng的渠道
+        manifestPlaceholders = [CHANNEL_VALUE: "umeng"]
+
+        ndk {
+            abiFilters "armeabi-v7a", 'x86'
+        }
+    }
+    buildTypes {
+        release {
+            debuggable false
+            jniDebuggable false
+            minifyEnabled true
+//            shrinkResources true  //去除无用资源
+
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [RELEASE_TYPE: "Product"]
+        }
+        debug {
+            debuggable true
+            jniDebuggable true
+            signingConfig signingConfigs.debug
+//            shrinkResources true  //去除无用资源
+
+            manifestPlaceholders = [RELEASE_TYPE: "Test"]
+        }
+    }
+    compileOptions {
+        //使用JAVA8语法解析
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/java-gen']
+        }
+    }
+
+    productFlavors {
+//        wandoujia {}
+//        xiaomi {}
+        qq {}
+//        qihu360 {}
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE.txt'
+    }
+
+
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [CHANNEL_VALUE: name]
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            //打包类型
+            def buildTypeName = variant.buildType.name
+            if (outputFile != null && outputFile.name.endsWith(".apk")) {
+                //打包渠道
+                def flavorName = variant.productFlavors[0].name
+                //版本号
+                def versionName = defaultConfig.versionName
+                //打包时间
+                def releaseTime = new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+                //Tribe_debug_qq_v0.0.1_2017-02-14.apk
+                def fileName = "Tribe_${buildTypeName}_${flavorName}_v${versionName}_${releaseTime}.apk"
+
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+
+        }
+
+    }
+
+}
+
+retrolambda {
+    //指定将源码编译的级别，使用下列代码，会将代码编译到兼容1.6的字节码格式
+    javaVersion JavaVersion.VERSION_1_7
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    Map<String, String> dependencies = rootProject.ext.dependencies
+    //系统
+    compile dependencies.supportV13
+    compile dependencies.appCompatV7
+    compile dependencies.recyclerView
+    compile dependencies.design
+    compile dependencies.supportAnnotation
+    compile dependencies.cardView
+    compile dependencies.supportV4
+    //第三方
+    compile dependencies.multidex
+    compile dependencies.nineoldandroids
+    compile dependencies.BGARefresh
+    compile dependencies.pinYin4j
+    compile dependencies.log4j
+    compile dependencies.photoView
+    compile dependencies.circleImageView
+    compile dependencies.butterknife
+    compile dependencies.greenDao
+    //    compile dependencies.greenDaoGenerator
+    //内存泄漏检测
+    debugCompile dependencies.debugBlockcanary
+    releaseCompile dependencies.releaseBlockcanary
+    debugCompile dependencies.debugLeakcanary
+    releaseCompile dependencies.releaseLeakcanary
+    //libs jar
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/android-logging-log4j-1.0.3.jar')
+    //project工程
+    compile project(':TabLayout_Lib')
+    compile project(':ActionSheetForAndroidLib')
+
+    // network
+    compile 'com.google.code.gson:gson:2.4'
+
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    compile 'com.squareup.okhttp3:okhttp:3.0.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.0.1'
+
+    //图片加载框架Glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+
+    // Rx
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    compile 'com.trello:rxlifecycle:0.7.0'
+    // If you want to bind to Android-specific lifecycles
+    compile 'com.trello:rxlifecycle-android:0.7.0'
+    // If you want pre-written Activities and Fragments you can subclass as providers
+    compile 'com.trello:rxlifecycle-components:0.7.0'
+
+    //jsoup 爬虫
+    compile 'org.jsoup:jsoup:1.10.2'
+
+    //react native
+    compile 'com.facebook.react:react-native:+'
+
+
+}
+
+//greendao {
+//    targetGenDir 'src/main/java'
+//    daoPackage 'com.entertainment.project.dao'
+//}
